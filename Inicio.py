@@ -8,12 +8,12 @@ from nltk.stem import SnowballStemmer
 st.title("🔍 Demo TF-IDF en Español")
 
 # Documentos de ejemplo
-default_docs = """El perro ladra fuerte en el parque.
-El gato maúlla suavemente durante la noche.
-El perro y el gato juegan juntos en el jardín.
-Los niños corren y se divierten en el parque.
-La música suena muy alta en la fiesta.
-Los pájaros cantan hermosas melodías al amanecer."""
+default_docs = """El perro baila en el mar de información
+El internet es una red de telarañas bien construidas. Sin embargo, su base es caotica e inestable
+Los gatos son muy lindos. Algunos perros también, pero solo los que tienen pelaje bonito, tal como: los Husky.
+El cerebro piensa rapido, también piensa despacio
+Mi dulce favorito es una vitamina, por alguna razón sabe muy rico
+Los pájaros duermen en la noche."""
 
 # Stemmer en español
 stemmer = SnowballStemmer("spanish")
