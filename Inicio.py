@@ -39,25 +39,25 @@ with col1:
 with col2:
     st.markdown("### 💡 Preguntas sugeridas:")
     
-    # NUEVAS preguntas optimizadas para mayor similitud
-    if st.button("¿Dónde juegan el perro y el gato?", use_container_width=True):
-        st.session_state.question = "¿Dónde juegan el perro y el gato?"
+   
+    if st.button("¿Donde baila el perro?", use_container_width=True):
+        st.session_state.question = "¿Donde baila el perro?"
         st.rerun()
     
-    if st.button("¿Qué hacen los niños en el parque?", use_container_width=True):
-        st.session_state.question = "¿Qué hacen los niños en el parque?"
+    if st.button("¿Cuales perros tienen el pelaje bonito?", use_container_width=True):
+        st.session_state.question = "¿Cuales perros tienen el pelaje bonito?"
         st.rerun()
         
-    if st.button("¿Cuándo cantan los pájaros?", use_container_width=True):
-        st.session_state.question = "¿Cuándo cantan los pájaros?"
+    if st.button("¿Cuándo duermen los pájaros?", use_container_width=True):
+        st.session_state.question = "¿Cuándo duermen los pájaros?"
         st.rerun()
         
-    if st.button("¿Dónde suena la música alta?", use_container_width=True):
-        st.session_state.question = "¿Dónde suena la música alta?"
+    if st.button("¿Como piensa el cerebro?", use_container_width=True):
+        st.session_state.question = "¿Como piensa el cerebro?"
         st.rerun()
         
-    if st.button("¿Qué animal maúlla durante la noche?", use_container_width=True):
-        st.session_state.question = "¿Qué animal maúlla durante la noche?"
+    if st.button("¿Que es el internet?", use_container_width=True):
+        st.session_state.question = "¿Que es el internet?"
         st.rerun()
 
 # Actualizar pregunta si se seleccionó una sugerida
@@ -100,8 +100,8 @@ if st.button("🔍 Analizar", type="primary"):
         best_score = similarities[best_idx]
         
         # Mostrar respuesta
-        st.markdown("### 🎯 Respuesta")
-        st.markdown(f"**Tu pregunta:** {question}")
+        st.markdown("### 🎯 *sonidos de magia* la respuesta a tu pregunta es...")
+        st.markdown(f"**Tu pregunta fue:** {question}")
         
         if best_score > 0.01:  # Umbral muy bajo
             st.success(f"**Respuesta:** {best_doc}")
