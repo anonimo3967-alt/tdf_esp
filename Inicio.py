@@ -100,7 +100,7 @@ if st.button("🔍 Analizar", type="primary"):
         best_score = similarities[best_idx]
         
         # Mostrar respuesta
-        st.markdown("### 🎯 **sonidos de magia** la respuesta a tu pregunta es...")
+        st.markdown("### 🎯 *sonidos de magia* / la respuesta a tu pregunta es...")
         st.markdown(f"**Tu pregunta fue:** {question}")
         
         if best_score > 0.01:  # Umbral muy bajo
